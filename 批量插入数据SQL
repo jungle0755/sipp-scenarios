@@ -27,7 +27,7 @@ LANGUAGE plpgsql;
 select * from creatData() as tab;
 
 CREATE TABLE uc_numbers(
-   id CHAR(50) PRIMARY KEY      NOT NULL,
-   passwd CHAR(50)
+   id VARCHAR(30) PRIMARY KEY      NOT NULL,
+   passwd VARCHAR(30)
 );  
 
