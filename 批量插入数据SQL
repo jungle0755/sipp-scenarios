@@ -25,3 +25,9 @@ declare ii integer;
 $BODY$
 LANGUAGE plpgsql;
 select * from creatData2() as tab;
+
+CREATE TABLE uc_numbers(
+   id CHAR(50) PRIMARY KEY      NOT NULL,
+   passwd CHAR(50)
+);  
+
