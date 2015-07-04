@@ -11,14 +11,14 @@ BEGIN
 END
 
 postgres 使用存储过程批量插入数据
-create or replace function creatData2() returns 
+create or replace function creatData() returns 
 boolean AS
 $BODY$
 declare ii integer;
   begin
   II:=1;
   FOR ii IN 1..10000000 LOOP
-  INSERT INTO ipm_model_history_data (res_model, res_id) VALUES (116, ii);
+  INSERT INTO uc_numbers (id, passwd) VALUES (ii, 1234);
   end loop;
   return true;
   end;
